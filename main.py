@@ -15,6 +15,12 @@ def random_error():
 
 
 def main():
+    import sentry_sdk
+    sentry_sdk.init(
+        dsn="https://1fe65355f21142688fbb1a556fc86fea@o345774.ingest.sentry.io/4505075204161536",
+        traces_sample_rate=1.0
+    )
+
     error_count = 5
     for i in range(error_count):
         try:
