@@ -28,6 +28,10 @@ def main():
         except Exception as e:
             print(f"Caught a random error {i + 1}: {type(e).__name__} - {e}")
 
+    division_by_zero = 1 / 0
+    
+    print(f"Oh no! {division_by_zero}")
+
 
 if __name__ == "__main__":
     main()
